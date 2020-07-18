@@ -1,0 +1,87 @@
+
+[t=1594490787460] LSP4E to quarkus:
+Content-Length: 1369
+
+
+[t=1594490787461] LSP4E to quarkus:
+{"jsonrpc":"2.0","id":"1","method":"initialize","params":{"processId":4859,"rootPath":"/home/jmarkaba/Code/RollPlay/rollplay/","rootUri":"file:/home/jmarkaba/Code/RollPlay/rollplay/","capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","delete","rename"],"failureHandling":"undo"},"symbol":{"dynamicRegistration":true},"executeCommand":{"dynamicRegistration":true},"workspaceFolders":true},"textDocument":{"synchronization":{"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"completionItem":{"snippetSupport":true,"documentationFormat":["markdown","plaintext"]}},"hover":{"contentFormat":["markdown","plaintext"]},"signatureHelp":{},"references":{},"documentHighlight":{},"documentSymbol":{"symbolKind":{"valueSet":[18,17,5,14,9,10,22,24,8,1,12,11,20,6,2,3,21,16,19,25,4,7,15,23,26,13]},"hierarchicalDocumentSymbolSupport":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{},"definition":{"linkSupport":true},"typeDefinition":{"linkSupport":true},"codeAction":{"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}},"dynamicRegistration":true},"codeLens":{},"documentLink":{},"colorProvider":{},"rename":{}}},"clientName":"IntelliJ","trace":"off"}}
+[t=1594490788124] quarkus to LSP4E:
+{"jsonrpc":"2.0","id":"1","result":{"capabilities":{"textDocumentSync":2,"hoverProvider":true,"completionProvider":{"resolveProvider":false,"triggerCharacters":[".","%","\u003d","@"]},"definitionProvider":true,"documentSymbolProvider":true,"codeLensProvider":{"resolveProvider":false},"documentFormattingProvider":false,"documentRangeFormattingProvider":true}}}
+[t=1594490788137] LSP4E to quarkus:
+Content-Length: 52
+
+
+[t=1594490788140] LSP4E to quarkus:
+{"jsonrpc":"2.0","method":"initialized","params":{}}
+[t=1594490788143] quarkus to LSP4E:
+{"jsonrpc":"2.0","id":"1","method":"client/registerCapability","params":{"registrations":[{"id":"debcd28f-8c6e-494a-9f51-bfd0488881df","method":"textDocument/codeAction"}]}}
+[t=1594490788145] LSP4E to quarkus:
+Content-Length: 40
+
+
+[t=1594490788145] LSP4E to quarkus:
+{"jsonrpc":"2.0","id":"1","result":null}
+[t=1594490788145] LSP4E to quarkus:
+Content-Length: 307
+
+
+[t=1594490788145] LSP4E to quarkus:
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/jmarkaba/Code/RollPlay/rollplay/src/main/java/com/jahlapeno/rollplay/CharacterResource.java","languageId":"quarkus","version":1,"text":"package com.jahlapeno.rollplay;\n\npublic class CharacterResource {\n}\n"}}}
+[t=1594490788145] quarkus to LSP4E:
+{"jsonrpc":"2.0","id":"2","method":"client/registerCapability","params":{"registrations":[{"id":"4cf64501-95d4-4c7d-85a8-24c064052c4e","method":"textDocument/formatting"}]}}
+[t=1594490788145] quarkus to LSP4E:
+{"jsonrpc":"2.0","id":"3","method":"client/registerCapability","params":{"registrations":[{"id":"6b201b21-b8aa-4d06-b99e-aba11360f376","method":"textDocument/rangeFormatting"}]}}
+[t=1594490788146] LSP4E to quarkus:
+Content-Length: 40
+
+
+[t=1594490788146] LSP4E to quarkus:
+{"jsonrpc":"2.0","id":"2","result":null}
+[t=1594490788146] LSP4E to quarkus:
+Content-Length: 40
+
+
+[t=1594490788147] LSP4E to quarkus:
+{"jsonrpc":"2.0","id":"3","result":null}
+[t=1594490788176] quarkus to LSP4E:
+{"jsonrpc":"2.0","id":"4","method":"microprofile/java/projectLabels","params":{"uri":"file:///home/jmarkaba/Code/RollPlay/rollplay/src/main/java/com/jahlapeno/rollplay/CharacterResource.java","types":["org.eclipse.microprofile.metrics.annotation.Metric","org.eclipse.microprofile.metrics.annotation.Counted","org.eclipse.microprofile.metrics.annotation.Gauge","org.eclipse.microprofile.metrics.annotation.ConcurrentGauge","org.eclipse.microprofile.metrics.annotation.Metered","org.eclipse.microprofile.metrics.annotation.Timed","org.eclipse.microprofile.metrics.annotation.SimplyTimed","org.eclipse.microprofile.metrics.annotation.RegistryType","org.eclipse.microprofile.openapi.annotations.Operation","org.eclipse.microprofile.openapi.annotations.media.Content","org.eclipse.microprofile.openapi.annotations.media.Schema","org.eclipse.microprofile.openapi.annotations.parameters.Parameters","org.eclipse.microprofile.openapi.annotations.parameters.Parameter","org.eclipse.microprofile.openapi.annotations.responses.APIResponses","org.eclipse.microprofile.openapi.annotations.responses.APIResponse","org.eclipse.microprofile.faulttolerance.Timeout","org.eclipse.microprofile.faulttolerance.Retry","org.eclipse.microprofile.faulttolerance.Fallback","org.eclipse.microprofile.faulttolerance.CircuitBreaker","org.eclipse.microprofile.faulttolerance.Bulkhead","javax.ws.rs.GET","io.quarkus.test.junit.QuarkusTest","io.quarkus.test.junit.SubstrateTest"]}}
+[t=1594490788344] LSP4E to quarkus:
+Content-Length: 630
+
+
+[t=1594490788345] LSP4E to quarkus:
+{"jsonrpc":"2.0","id":"4","result":{"uri":"/home/jmarkaba/Code/RollPlay/rollplay/rollplay.iml","labels":["microprofile","quarkus","org.eclipse.microprofile.metrics.annotation.Metric","org.eclipse.microprofile.metrics.annotation.Counted","org.eclipse.microprofile.metrics.annotation.Gauge","org.eclipse.microprofile.metrics.annotation.ConcurrentGauge","org.eclipse.microprofile.metrics.annotation.Metered","org.eclipse.microprofile.metrics.annotation.Timed","org.eclipse.microprofile.metrics.annotation.SimplyTimed","org.eclipse.microprofile.metrics.annotation.RegistryType","javax.ws.rs.GET","io.quarkus.test.junit.QuarkusTest"]}}
+[t=1594490788376] quarkus to LSP4E:
+{"jsonrpc":"2.0","id":"5","method":"microprofile/java/diagnostics","params":{"uris":["file:///home/jmarkaba/Code/RollPlay/rollplay/src/main/java/com/jahlapeno/rollplay/CharacterResource.java"],"documentFormat":2}}
+[t=1594490788411] LSP4E to quarkus:
+Content-Length: 169
+
+
+[t=1594490788411] LSP4E to quarkus:
+{"jsonrpc":"2.0","id":"5","result":[{"uri":"file:///home/jmarkaba/Code/RollPlay/rollplay/src/main/java/com/jahlapeno/rollplay/CharacterResource.java","diagnostics":[]}]}
+[t=1594490788417] quarkus to LSP4E:
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"uri":"file:///home/jmarkaba/Code/RollPlay/rollplay/src/main/java/com/jahlapeno/rollplay/CharacterResource.java","diagnostics":[]}}
+[t=1594490796162] LSP4E to quarkus:
+Content-Length: 326
+
+
+[t=1594490796162] LSP4E to quarkus:
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"version":2,"uri":"file:///home/jmarkaba/Code/RollPlay/rollplay/src/main/java/com/jahlapeno/rollplay/CharacterResource.java"},"contentChanges":[{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":0}},"rangeLength":0,"text":"@"}]}}
+[t=1594490796166] quarkus to LSP4E:
+{"jsonrpc":"2.0","id":"6","method":"microprofile/java/diagnostics","params":{"uris":["file:///home/jmarkaba/Code/RollPlay/rollplay/src/main/java/com/jahlapeno/rollplay/CharacterResource.java"],"documentFormat":2}}
+[t=1594490796196] LSP4E to quarkus:
+Content-Length: 169
+
+
+[t=1594490796196] LSP4E to quarkus:
+{"jsonrpc":"2.0","id":"6","result":[{"uri":"file:///home/jmarkaba/Code/RollPlay/rollplay/src/main/java/com/jahlapeno/rollplay/CharacterResource.java","diagnostics":[]}]}
+[t=1594490796197] quarkus to LSP4E:
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"uri":"file:///home/jmarkaba/Code/RollPlay/rollplay/src/main/java/com/jahlapeno/rollplay/CharacterResource.java","diagnostics":[]}}
+[t=1594490796482] LSP4E to quarkus:
+Content-Length: 351
+
+
+[t=1594490796482] LSP4E to quarkus:
+{"jsonrpc":"2.0","id":"2","method":"textDocument/completion","params":{"textDocument":{"uri":"file:///home/jmarkaba/Code/RollPlay/rollplay/src/main/java/com/jahlapeno/rollplay/CharacterResource.java"},"uri":"file:///home/jmarkaba/Code/RollPlay/rollplay/src/main/java/com/jahlapeno/rollplay/CharacterResource.java","position":{"line":1,"character":1}}}
+[t=1594490796493] quarkus to LSP4E:
+{"jsonrpc":"2.0","id":"2","result":{"isIncomplete":false,"items":[{"label":"@Metric","kind":15,"detail":"An annotation that contains the metadata information when requesting a metric to be injected or produced. This annotation can be used on fields of type Meter, Timer, Counter, and Histogram. For Gauge, the @Metric annotation can only be used on producer methods/fields.","documentation":{"kind":"markdown","value":"\n```\n@Metric(\n\tname \u003d \"name\",\n\tdescription \u003d \"description\"\n)\n```\n"},"filterText":"@Metric","insertTextFormat":2,"textEdit":{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":"@Metric(\n\tname \u003d \"${1:name}\",\n\tdescription \u003d \"${2:description}\"\n)"}},{"label":"@Counted","kind":15,"detail":"Denotes a counter, which counts the invocations of the annotated object.","documentation":{"kind":"markdown","value":"\n```\n@Counted(\n\tname \u003d \"name\",\n\tdescription \u003d \"description\"\n)\n```\n"},"filterText":"@Counted","insertTextFormat":2,"textEdit":{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":"@Counted(\n\tname \u003d \"${1:name}\",\n\tdescription \u003d \"${2:description}\"\n)"}},{"label":"@Gauge","kind":15,"detail":"Denotes a gauge, which samples the value of the annotated object.","documentation":{"kind":"markdown","value":"\n```\n@Gauge(\n\tname \u003d \"name\",\n\tdescription \u003d \"description\"\n)\n```\n"},"filterText":"@Gauge","insertTextFormat":2,"textEdit":{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":"@Gauge(\n\tname \u003d \"${1:name}\",\n\tdescription \u003d \"${2:description}\"\n)"}},{"label":"@ConcurrentGauge","kind":15,"detail":"Denotes a gauge which counts the parallel invocations of the annotated object.","documentation":{"kind":"markdown","value":"\n```\n@ConcurrentGauge(\n\tname \u003d \"name\",\n\tdescription \u003d \"description\"\n)\n```\n"},"filterText":"@ConcurrentGauge","insertTextFormat":2,"textEdit":{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":"@ConcurrentGauge(\n\tname \u003d \"${1:name}\",\n\tdescription \u003d \"${2:description}\"\n)"}},{"label":"@Metered","kind":15,"detail":"Denotes a meter, which tracks the frequency of invocations of the annotated object.","documentation":{"kind":"markdown","value":"\n```\n@Metered(\n\tname \u003d \"name\",\n\tdescription \u003d \"description\"\n)\n```\n"},"filterText":"@Metered","insertTextFormat":2,"textEdit":{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":"@Metered(\n\tname \u003d \"${1:name}\",\n\tdescription \u003d \"${2:description}\"\n)"}},{"label":"@Timed","kind":15,"detail":"Denotes a timer, which tracks duration of the annotated object.","documentation":{"kind":"markdown","value":"\n```\n@Timed(\n\tname \u003d \"name\",\n\tdescription \u003d \"description\"\n)\n```\n"},"filterText":"@Timed","insertTextFormat":2,"textEdit":{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":"@Timed(\n\tname \u003d \"${1:name}\",\n\tdescription \u003d \"${2:description}\"\n)"}},{"label":"@SimplyTimed","kind":15,"detail":"Denotes a simple timer, which tracks duration and invocations of the annotated object.","documentation":{"kind":"markdown","value":"\n```\n@SimplyTimed(\n\tname \u003d \"name\",\n\tdescription \u003d \"description\"\n)\n```\n"},"filterText":"@SimplyTimed","insertTextFormat":2,"textEdit":{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":"@SimplyTimed(\n\tname \u003d \"${1:name}\",\n\tdescription \u003d \"${2:description}\"\n)"}},{"label":"@RegistryType","kind":15,"detail":"Qualifies the scope of Metric Registry to inject when injecting a MetricRegistry.","documentation":{"kind":"markdown","value":"\n```\n@RegistryType(type\u003d$1)\n```\n"},"filterText":"@RegistryType","insertTextFormat":2,"textEdit":{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":"@RegistryType(type\u003d$1)"}},{"label":"qrc","kind":15,"detail":"Quarkus REST resource class","documentation":{"kind":"markdown","value":"\n```\npackage packagename;\n\nimport javax.ws.rs.GET;\nimport javax.ws.rs.Path;\nimport javax.ws.rs.Produces;\nimport javax.ws.rs.core.MediaType;\n\n@Path(\"/path\")\npublic class TM_FILENAME_BASE {\n\n\t@GET\n\t@Produces(MediaType.TEXT_PLAIN)\n\tpublic String methodname() {\n\t\treturn \"hello\";\n\t}\n}\n```\n"},"filterText":"qrc","insertTextFormat":2,"textEdit":{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":"package ${1:packagename};\n\nimport javax.ws.rs.GET;\nimport javax.ws.rs.Path;\nimport javax.ws.rs.Produces;\nimport javax.ws.rs.core.MediaType;\n\n@Path(\"${2:/path}\")\npublic class ${TM_FILENAME_BASE} {\n\n\t@GET\n\t@Produces(MediaType.TEXT_PLAIN)\n\tpublic String ${3:methodname}() {\n\t\treturn \"hello\";\n\t}\n}"}},{"label":"qrm","kind":15,"detail":"Quarkus REST resource method","documentation":{"kind":"markdown","value":"\n```\n@GET\n@Produces(MediaType.TEXT_PLAIN)\npublic String methodname() {\n\treturn \"hello\";\n}\n```\n"},"filterText":"qrm","insertTextFormat":2,"textEdit":{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":"@GET\n@Produces(MediaType.TEXT_PLAIN)\npublic String ${1:methodname}() {\n\treturn \"hello\";\n}"}},{"label":"qtrc","kind":15,"detail":"Quarkus test resource class","documentation":{"kind":"markdown","value":"\n```\npackage packagename;\n\nimport io.quarkus.test.junit.QuarkusTest;\nimport org.junit.jupiter.api.Test;\n\nimport static io.restassured.RestAssured.given;\nimport static org.hamcrest.CoreMatchers.is;\n\n@QuarkusTest\npublic class TM_FILENAME_BASE {\n\n\t@Test\n\tpublic void testmethodname() {\n\t\tgiven()\n\t\t.when().get(\"/path\")\n\t\t.then()\n\t\t\t.statusCode(200)\n\t\t\t.body(is(\"hello\"));\n\t}\n\n}\n```\n"},"filterText":"qtrc","insertTextFormat":2,"textEdit":{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":"package ${1:packagename};\n\nimport io.quarkus.test.junit.QuarkusTest;\nimport org.junit.jupiter.api.Test;\n\nimport static io.restassured.RestAssured.given;\nimport static org.hamcrest.CoreMatchers.is;\n\n@QuarkusTest\npublic class ${TM_FILENAME_BASE} {\n\n\t@Test\n\tpublic void test${2:methodname}() {\n\t\tgiven()\n\t\t.when().get(\"${3:/path}\")\n\t\t.then()\n\t\t\t.statusCode(200)\n\t\t\t.body(is(\"hello\"));\n\t}\n\n}"}}]}}
